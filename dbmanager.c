@@ -129,7 +129,7 @@ int login()
     while(fgets(str,256,lp)!=NULL)
     {
         token=strtok(str,delim);								/*utilizzando la funzione strtok dell'header file string.h,la stringa viene suddivisa in una serie
-                                                                  di token attraverso un delimitatore chiamato "delim"(in questo caso il delimitatore è il tab).*/
+                                                                  di token attraverso un delimitatore chiamato "delim"(in questo caso il delimitatore Ã¨ il tab).*/
         cmpusr=strcmp(user,token);								//la funzione strcmp confronta le due stringhe inserite per valutarne l'uguaglianza o meno
         if(cmpusr==0)
         {
@@ -278,7 +278,7 @@ void modifica()
     }
     else
     {
-    	char stringa[256],str[256],temp[256],*token,*m[5]; //m[5] è un vettore di puntatori (stringhe)
+    	char stringa[256],str[256],temp[256],*token,*m[5]; //m[5] Ã¨ un vettore di puntatori (stringhe)
     	int r,cmp,i;
     	FILE *fp,*fv;
     	fp=fopen(name,"r");
